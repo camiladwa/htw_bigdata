@@ -34,5 +34,57 @@ ggplot(pckg_25, aes(x = reorder(pckg, -count), count)) +
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))+
   scale_y_continuous(labels = scales::comma)
 
+---------------
+  
+  
+ml <- read.csv('ml', header = FALSE, col.names = c('pckg', 'count'))
+
+topic <- read.csv('topics', header = FALSE, col.names = c('topic','pckg', 'count'))
 
 
+ml_10 <- ml %>%
+  mutate(count= as.numeric(count))%>%
+  arrange(desc(count))%>%
+  head(10)
+
+topic_summary <- topic %>%
+  mutate(count= as.numeric(count))%>%
+  group_by(topic)%>%
+  summarise(count = sum(count))
+
+
+topics_10 <- topic %>%
+  mutate(count= as.numeric(count))%>%
+  arrange(desc(count))%>%
+  head(10) 
+
+
+ggplot(ml_10, aes(reorder(pckg, -count), count)) +
+  geom_bar(stat="identity", fill="steelblue")+
+  labs(y= "Occurrence", x = "Package")+
+  geom_label(aes(label = count))+
+  theme_classic()+
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))+
+  scale_y_continuous(labels = scales::comma)
+
+
+
+ggplot(topic_summary, aes(reorder(topic, -count), count)) +
+  geom_bar(stat="identity", fill=c("#999999", "#E69F00", "#56B4E9"))+
+  coord_flip()+
+  labs(y= "Occurrence", x = "")+
+  geom_label(aes(label = count))+
+  theme_classic()+
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))+
+  scale_y_continuous(labels = scales::comma)
+
+
+
+
+ggplot(topics_10, aes(x = reorder(pckg, -count), count, fill = topic)) +
+  scale_fill_manual(values=c("#999999", "#E69F00", "#56B4E9"))+
+  geom_bar(stat="identity")+
+  labs(y= "Occurrence", x = "Package")+
+  theme_classic()+
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))+
+  scale_y_continuous(labels = scales::comma)
