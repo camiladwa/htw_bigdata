@@ -7,6 +7,8 @@ pck_count <- read.csv('package_count', header = FALSE, col.names = c('pckg', 'co
 
 summary(os_count)
 summary(pck_count)
+total_log = sum(pck_count$count)
+
 
 os_25 <- os_count %>%
   drop_na()%>%
@@ -17,21 +19,26 @@ os_25 <- os_count %>%
 pckg_25 <- pck_count %>%
   drop_na()%>%
   arrange(desc(count))%>%
-  head(25) 
-  
+  head(25)
 
-ggplot(os_25, aes(reorder(os, -count), count)) +
+top_25_log = sum(pckg_25$count)  
+top_25_log/total_log
+
+ggplot(os_25, aes(reorder(os, count), count)) +
   geom_bar(stat="identity", fill="steelblue")+
+  coord_flip()+
   labs(y= "Occurrence", x = "Operating System")+
-  geom_label(aes(label = count))+
-  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))+
+  geom_text(aes(label = count, hjust = 0))+
+  ylim(0, 1800000)
+  theme(axis.text.x = element_text(angle = 90, vjust =0, hjust= 1))+
   scale_y_continuous(labels = scales::comma)
 
 
-ggplot(pckg_25, aes(x = reorder(pckg, -count), count)) +
+ggplot(pckg_25, aes(x = reorder(pckg, count), count)) +
   geom_bar(stat="identity", fill="steelblue")+
+  coord_flip()+
   labs(y= "Occurrence", x = "Package")+
-  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))+
+  theme(axis.text.x = element_text( vjust = 0.5, hjust=1))+
   scale_y_continuous(labels = scales::comma)
 
 ---------------
