@@ -1,0 +1,37 @@
+Topic,Package
+Neural Networks and Deep Learning,nnet
+Neural Networks and Deep Learning,RSNNS
+Neural Networks and Deep Learning,deepnet
+Neural Networks and Deep Learning,RcppDL
+Neural Networks and Deep Learning,h2o
+Neural Networks and Deep Learning,tensorflow
+Boosting and Gradient Descent,gbm
+Boosting and Gradient Descent,xgboost
+Boosting and Gradient Descent,bst
+Boosting and Gradient Descent,mboost
+Boosting and Gradient Descent,GMMBoost
+Boosting and Gradient Descent,gamboostLSS
+Boosting and Gradient Descent,gradDescent
+Regularized and Shrinkage Methods,lasso2
+Regularized and Shrinkage Methods,lars
+Regularized and Shrinkage Methods,grplasso
+Regularized and Shrinkage Methods,grpreg
+Regularized and Shrinkage Methods,glmpath
+Regularized and Shrinkage Methods,elasticnet
+Regularized and Shrinkage Methods,glmnet
+Regularized and Shrinkage Methods,penalized
+Regularized and Shrinkage Methods,biglasso
+Regularized and Shrinkage Methods,RXshrink
+Regularized and Shrinkage Methods,ahaz
+Regularized and Shrinkage Methods,relaxo
+Regularized and Shrinkage Methods,penalizedLDA
+Regularized and Shrinkage Methods,pamr
+Regularized and Shrinkage Methods,earth
+Regularized and Shrinkage Methods,hda
+Regularized and Shrinkage Methods,sda
+Regularized and Shrinkage Methods,LiblineaR
+Regularized and Shrinkage Methods,ncvreg
+Regularized and Shrinkage Methods,picasso
+Regularized and Shrinkage Methods,bmrm
+Regularized and Shrinkage Methods,hdm
+Regularized and Shrinkage Methods,SIS

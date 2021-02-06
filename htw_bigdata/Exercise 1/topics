@@ -1,0 +1,36 @@
+Neural Networks and Deep Learning,nnet,4341
+Neural Networks and Deep Learning,RSNNS,361
+Neural Networks and Deep Learning,deepnet,334
+Neural Networks and Deep Learning,RcppDL,72
+Neural Networks and Deep Learning,h2o,2754
+Neural Networks and Deep Learning,tensorflow,3380
+Boosting and Gradient Descent,gbm,2507
+Boosting and Gradient Descent,xgboost,7507
+Boosting and Gradient Descent,bst,334
+Boosting and Gradient Descent,mboost,688
+Boosting and Gradient Descent,GMMBoost,76
+Boosting and Gradient Descent,gamboostLSS,306
+Boosting and Gradient Descent,gradDescent,99
+Regularized and Shrinkage Methods,lasso2,300
+Regularized and Shrinkage Methods,lars,1455
+Regularized and Shrinkage Methods,grplasso,169
+Regularized and Shrinkage Methods,grpreg,1917
+Regularized and Shrinkage Methods,glmpath,86
+Regularized and Shrinkage Methods,elasticnet,634
+Regularized and Shrinkage Methods,glmnet,6115
+Regularized and Shrinkage Methods,penalized,489
+Regularized and Shrinkage Methods,biglasso,202
+Regularized and Shrinkage Methods,RXshrink,90
+Regularized and Shrinkage Methods,ahaz,101
+Regularized and Shrinkage Methods,relaxo,81
+Regularized and Shrinkage Methods,penalizedLDA,72
+Regularized and Shrinkage Methods,pamr,724
+Regularized and Shrinkage Methods,earth,1580
+Regularized and Shrinkage Methods,hda,85
+Regularized and Shrinkage Methods,sda,333
+Regularized and Shrinkage Methods,LiblineaR,542
+Regularized and Shrinkage Methods,ncvreg,321
+Regularized and Shrinkage Methods,picasso,90
+Regularized and Shrinkage Methods,bmrm,82
+Regularized and Shrinkage Methods,hdm,99
+Regularized and Shrinkage Methods,SIS,176
